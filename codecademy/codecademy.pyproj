@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="codecademy.py" />
+    <Compile Include="Linked_lists.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="nodes.py">
       <SubType>Code</SubType>
     </Compile>
