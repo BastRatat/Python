@@ -20,6 +20,10 @@ kids = {
 }
 # Kids is served from 1100 to 2100.
 
+arepas = {
+  'arepa pabellon': 7.00, 'pernil arepa': 8.50, 'guayanes arepa': 8.00, 'jamon arepa': 7.50
+}
+# Arepa is served from 1000 to 2000.
 
 # CLASS DECLARATION
 
@@ -57,19 +61,29 @@ class Franchise:
                 available_menu.append(menu)
         return available_menu
 
+class Business:
+
+    def __init__(self, name, franchises):
+        self.name = name
+        self.franchises = franchises
+
+
+
 # CLASS INSTANTIATION
 
 brunch_menu = Menu("Brunch", brunch, 1100, 1600)
 early_bird_menu = Menu("Early bird", early_bird, 1500, 1800)
 dinner_menu = Menu("Dinner", dinner, 1700, 2300)
 kids_menu = Menu("Kids", kids, 1100, 2100)
+arepas_menu = Menu("Arepa", arepas, 1000, 2000)
+all_menus = [brunch_menu, early_bird_menu, dinner_menu, kids_menu, arepas_menu]
 
 flagship_store = Franchise("1232 West End Road", [brunch_menu, early_bird_menu, dinner_menu, kids_menu])
 new_installment = Franchise("12 East Mulberry Street", [brunch_menu, early_bird_menu, dinner_menu, kids_menu])
+two_franchises = [flagship_store, new_installment]
+arepas_place = Franchise("189 Fitzgerald Avenue", )
 
-
-
-
+basta = Business("Take a' Arepa", arepas_place)
 
 # CALLS 
 # print(brunch_menu) # will return Brunch menu available from 1100 to 1600.
