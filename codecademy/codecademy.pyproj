@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Class_project.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="codecademy.py" />
     <Compile Include="Linked_lists.py">
       <SubType>Code</SubType>
