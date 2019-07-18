@@ -31,8 +31,8 @@ class Menu:
         self.start_time = start_time
         self.end_time = end_time
 
-    def __repr__(self):
-        return print("{} menu available from {} to {}.".format(self.name, self.start_time, self.end_time))
+    def __str__(self):
+        return "{} menu available from {} to {}.".format(str(self.name), self.start_time, self.end_time)
 
     def calculate_bill(self, purchased_items):
         bill = 0
@@ -41,7 +41,21 @@ class Menu:
                 bill += self.items[purchased_item]
         return bill
 
+class Franchise:
 
+    def __init__(self, address, menus):
+        self.address = address
+        self.menus = menus
+
+    def __str__(self):
+        return "The adress of the restaurant is {}.".format(str(self.address))
+
+    def available_menus(self, time):
+        available_menu = list()
+        for menu in self.menus:
+            if time >= menu.start_time and time <= menu.end_time:
+                available_menu.append(menu)
+        return available_menu
 
 # CLASS INSTANTIATION
 
@@ -50,6 +64,8 @@ early_bird_menu = Menu("Early bird", early_bird, 1500, 1800)
 dinner_menu = Menu("Dinner", dinner, 1700, 2300)
 kids_menu = Menu("Kids", kids, 1100, 2100)
 
+flagship_store = Franchise("1232 West End Road", [brunch_menu, early_bird_menu, dinner_menu, kids_menu])
+new_installment = Franchise("12 East Mulberry Street", [brunch_menu, early_bird_menu, dinner_menu, kids_menu])
 
 
 
@@ -59,3 +75,8 @@ kids_menu = Menu("Kids", kids, 1100, 2100)
 # print(brunch_menu) # will return Brunch menu available from 1100 to 1600.
 # print(brunch_menu.calculate_bill(['pancakes', 'home fries', 'coffee'])) # will return 13.5
 # print(early_bird_menu.calculate_bill(['salumeria plate', 'mushroom ravioli (vegan)'])) # will return 21.5
+# print(flagship_store)
+# print(flagship_store.available_menus(1200))
+
+
+
