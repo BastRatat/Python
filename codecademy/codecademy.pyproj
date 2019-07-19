@@ -25,6 +25,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="codecademy.py" />
+    <Compile Include="dictionaries.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Linked_lists.py">
       <SubType>Code</SubType>
     </Compile>
