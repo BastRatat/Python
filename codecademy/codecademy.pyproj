@@ -37,6 +37,9 @@
     <Compile Include="nodes.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="scrabble.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Stacks.py">
       <SubType>Code</SubType>
     </Compile>
