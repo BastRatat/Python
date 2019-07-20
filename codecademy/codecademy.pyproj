@@ -40,6 +40,9 @@
     <Compile Include="scrabble.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="scrabble_classes.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Stacks.py">
       <SubType>Code</SubType>
     </Compile>
