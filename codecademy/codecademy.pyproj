@@ -28,7 +28,13 @@
     <Compile Include="dictionaries.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="hash_maps.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Linked_lists.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="trees_projects.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Queues.py">
