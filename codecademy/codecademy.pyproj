@@ -31,6 +31,9 @@
     <Compile Include="hash_maps.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="heaps.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Linked_lists.py">
       <SubType>Code</SubType>
     </Compile>
