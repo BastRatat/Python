@@ -40,6 +40,9 @@
     <Compile Include="Linked_lists.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="maze_project.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Trees.py">
       <SubType>Code</SubType>
     </Compile>
