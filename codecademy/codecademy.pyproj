@@ -43,6 +43,9 @@
     <Compile Include="maze_project.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="recursion.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Trees.py">
       <SubType>Code</SubType>
     </Compile>
