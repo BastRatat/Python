@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Bubble_sort.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Class_project.py">
       <SubType>Code</SubType>
     </Compile>
