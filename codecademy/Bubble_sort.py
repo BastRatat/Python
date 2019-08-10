@@ -28,3 +28,39 @@ list[index_1], list[index_2] = list[index_2], list[index_1]
 
 #Algorithm efficiency :
 #O(n(n−1))=O(n(n))=O(n^2)
+
+#How to swap numbers using the temporary variable?
+nums = [5, 2, 9, 1, 5, 6]
+
+def swap(arr, index_1, index_2):
+  temp = arr[index_1]
+  arr[index_1] = arr[index_2]
+  arr[index_2] = temp
+
+swap(nums, 3, 5) # will swap the values 1 and 6
+print(nums) # [5, 2, 9, 6, 5, 1]
+
+# Build a fonction that compare neighboring items. If they are out of order, we'll swap them:
+def bubble_sort(arr):
+  for element in arr:
+    for index in range(len(arr)-1):
+      if arr[index] > arr[index+1]:
+        swap(arr, index, index+1)
+
+# Algorithm and exemple :
+nums = [5, 2, 9, 1, 5, 6]
+
+def swap(arr, index_1, index_2):
+  temp = arr[index_1]
+  arr[index_1] = arr[index_2]
+  arr[index_2] = temp
+  
+def bubble_sort(arr):
+  for element in arr:
+    for index in range(len(arr)-1):
+      if arr[index] > arr[index+1]:
+        swap(arr, index, index+1)
+
+print("Pre-Sort: {0}".format(nums))      
+bubble_sort(nums)
+print("Post-Sort: {0}".format(nums))
