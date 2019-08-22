@@ -52,6 +52,9 @@
     <Compile Include="recursion.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="search_algorithms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Trees.py">
       <SubType>Code</SubType>
     </Compile>
