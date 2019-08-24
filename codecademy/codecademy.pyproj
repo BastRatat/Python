@@ -52,6 +52,9 @@
     <Compile Include="Merge_sort.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="project_search_academy.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="recursion.py">
       <SubType>Code</SubType>
     </Compile>
