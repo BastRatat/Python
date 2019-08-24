@@ -27,6 +27,33 @@
 #BFS, which generally relies on a queue data structure, is helpful in finding the shortest path between two points
 #There are three common traversal orders which you can apply with DFS to generate a list of all values in a graph: pre-order, post-order, and reverse post-order
 
+# DFS
+
+#We define a function dfs that accepts the following as parameters:
+
+#graph (this is the graph that we pass in)
+#current_vertex (the value passed in will be the start vertex)
+#target_value (the value we are looking for)
+#visited (a list to collect the path of our algorithm) Give visited a default value of None. We won’t be passing any argument in for visited when we call the function; this parameter only exists here for the recursive calls!
+
+
+
+
+
+
+def dfs(graph, current_vertex, target_value, visited = None):
+  if visited is None:
+    visited = []
+  visited.append(current_vertex)
+  # base case
+  if current_vertex is target_value:
+    return visited
+  # recursive step
+  for neighbor in graph[current_vertex]:
+    if neighbor not in visited:
+      path = dfs(graph, neighbor, target_value, visited)
+      if path:
+        return path
 
 
 
