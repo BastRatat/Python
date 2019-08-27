@@ -61,6 +61,9 @@
     <Compile Include="search_algorithms.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Skyroute_project.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Trees.py">
       <SubType>Code</SubType>
     </Compile>
