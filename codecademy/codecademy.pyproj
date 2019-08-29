@@ -31,6 +31,9 @@
     <Compile Include="dictionaries.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="function_argument.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="graphs.py">
       <SubType>Code</SubType>
     </Compile>
